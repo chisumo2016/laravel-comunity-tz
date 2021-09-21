@@ -1075,6 +1075,17 @@ select {
 .prose > :last-child {
 	margin-bottom: 0;
 }
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
 .fixed {
 	position: fixed;
 }
@@ -1445,6 +1456,9 @@ select {
 .border-b {
 	border-bottom-width: 1px;
 }
+.border-r {
+	border-right-width: 1px;
+}
 .border-gray-300 {
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
@@ -1463,6 +1477,10 @@ select {
 .border-gray-100 {
 	--tw-border-opacity: 1;
 	border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+}
+.border-gray-400 {
+	--tw-border-opacity: 1;
+	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
 }
 .bg-white {
 	--tw-bg-opacity: 1;
@@ -1623,6 +1641,9 @@ select {
 .pt-8 {
 	padding-top: 2rem;
 }
+.pb-16 {
+	padding-bottom: 4rem;
+}
 .text-left {
 	text-align: left;
 }
@@ -1685,6 +1706,9 @@ select {
 }
 .tracking-widest {
 	letter-spacing: 0.1em;
+}
+.tracking-wider {
+	letter-spacing: 0.05em;
 }
 .text-gray-500 {
 	--tw-text-opacity: 1;
@@ -1753,6 +1777,10 @@ select {
 .text-gray-300 {
 	--tw-text-opacity: 1;
 	color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+.text-primary-900 {
+	--tw-text-opacity: 1;
+	color: rgba(236, 67, 50, var(--tw-text-opacity));
 }
 .underline {
 	text-decoration: underline;
@@ -2210,6 +2238,10 @@ select {
 		padding-bottom: 1rem;
 	}
 
+	.sm\:pb-24 {
+		padding-bottom: 6rem;
+	}
+
 	.sm\:text-left {
 		text-align: left;
 	}
@@ -2232,8 +2264,24 @@ select {
 		margin-top: 0px;
 	}
 
+	.md\:ml-10 {
+		margin-left: 2.5rem;
+	}
+
+	.md\:block {
+		display: block;
+	}
+
 	.md\:grid {
 		display: grid;
+	}
+
+	.md\:hidden {
+		display: none;
+	}
+
+	.md\:w-auto {
+		width: auto;
 	}
 
 	.md\:grid-cols-3 {
@@ -2246,6 +2294,12 @@ select {
 
 	.md\:gap-6 {
 		gap: 1.5rem;
+	}
+
+	.md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-x-reverse: 0;
+		margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+		margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 
 	.md\:border-t-0 {
@@ -2265,6 +2319,10 @@ select {
 	.lg\:px-8 {
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+
+	.lg\:pb-32 {
+		padding-bottom: 8rem;
 	}
 }
 
