@@ -21035,6 +21035,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  data: function data() {
+    return {
+      hideMobileNav: true
+    };
+  },
   components: {
     Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Head,
     Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link
@@ -21044,6 +21049,11 @@ __webpack_require__.r(__webpack_exports__);
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String
+  },
+  methods: {
+    toggleMobileNav: function toggleMobileNav() {
+      this.hideMobileNav = !this.hideMobileNav;
+    }
   }
 }));
 
@@ -25448,15 +25458,134 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = {
+  "class": "relative pt-6 pb-16 sm:pb-24 lg:pb-32"
+};
+var _hoisted_2 = {
+  "class": "relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6",
+  "aria-label": "Global"
+};
+var _hoisted_3 = {
+  "class": "flex items-center flex-1"
+};
+var _hoisted_4 = {
+  "class": "flex items-center justify-between w-full md:w-auto"
+};
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"pt-6 pb-16 sm:pb-24 lg:pb-32\"><div><nav class=\"relative flex max-w-7xl mx-auto items-center justify-between px-4 sm:p-6\"><div class=\"flex items-center flex-1\"><div class=\"flex items-center justify-between w-full md:w-auto\"><a href=\"\"><span class=\"sr-only\">Laravel Community Tanzania</span><img class=\"h-12 w-auto sm:h-10\" src=\"images/logo.png\" alt=\"Laravel Community Tanzania\"></a><div class=\"flex -mr-2 items-center md:hidden\"><button class=\"bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400\" type=\"button\"><span class=\"sr-only\">Open main menu</span><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><!--end of button--></div><!--end of Hardburg--></div><!--end of div hold the image--><div class=\"hidden md:block md:ml-10 md:space-x-10\"><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Home</a><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Developers</a><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Events</a><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Blog</a></div><!--end of menu--></div><!--end of flex-1--><div class=\"hidden md:block text-right\"><span class=\"inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5\"><a href=\"#\" class=\"inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-primary-900 bg-white hover:bg-gray-50\">Login</a></span></div></nav><!--end of nav--><div></div><!--end of popup--></div><!--end of div--></div>", 1);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Laravel Community Tanzania"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "h-12 w-auto sm:h-10",
+  src: "/images/logo.png",
+  alt: "Laravel Community Tanzania"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  type: "button",
+  "class": "bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+  "aria-expanded": "false"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Open main menu"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Heroicon name: outline/menu "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+  "class": "h-6 w-6",
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  stroke: "currentColor",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "2",
+  d: "M4 6h16M4 12h16M4 18h16"
+})])], -1
+/* HOISTED */
+);
+
+var _hoisted_7 = [_hoisted_6];
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"hidden md:block md:ml-10 md:space-x-10\"><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Home </a><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Developers </a><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Events </a><a href=\"#\" class=\"font-medium text-gray-500 hover:text-gray-900\"> Blog </a></div>", 1);
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "hidden md:block text-right"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-primary-900 bg-white hover:bg-gray-50"
+}, " Log in ")])], -1
+/* HOISTED */
+);
+
+var _hoisted_10 = {
+  "class": "absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+};
+var _hoisted_11 = {
+  "class": "rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+};
+var _hoisted_12 = {
+  "class": "px-5 pt-4 flex items-center justify-between"
+};
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "h-12 w-auto",
+  src: "/img/logo.png",
+  alt: "Laravel Community Tanzania"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  type: "button",
+  "class": "bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "sr-only"
+}, "Close main menu"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Heroicon name: outline/x "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+  "class": "h-6 w-6",
+  xmlns: "http://www.w3.org/2000/svg",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  stroke: "currentColor",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "2",
+  d: "M6 18L18 6M6 6l12 12"
+})])], -1
+/* HOISTED */
+);
+
+var _hoisted_15 = [_hoisted_14];
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"px-2 pt-2 pb-3 space-y-1\"><a href=\"#\" class=\"block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50\"> Home </a><a href=\"#\" class=\"block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50\"> Developers </a><a href=\"#\" class=\"block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50\"> Events </a><a href=\"#\" class=\"block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50\"> Blog </a></div><a href=\"#\" class=\"block w-full px-5 py-3 text-center font-medium text-primary-900 bg-gray-50 hover:bg-gray-100\"> Log in </a>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Welcome"
-  }), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("end of Main Div")], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    onClick: _cache[0] || (_cache[0] = function () {
+      return _ctx.toggleMobileNav && _ctx.toggleMobileNav.apply(_ctx, arguments);
+    }),
+    "class": "-mr-2 flex items-center md:hidden"
+  }, _hoisted_7)]), _hoisted_8]), _hoisted_9]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([{
+      hidden: _ctx.hideMobileNav
+    }, "bg-white overflow-hidden"])
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    onClick: _cache[1] || (_cache[1] = function () {
+      return _ctx.toggleMobileNav && _ctx.toggleMobileNav.apply(_ctx, arguments);
+    }),
+    "class": "-mr-2"
+  }, _hoisted_15)]), _hoisted_16])])], 2
+  /* CLASS */
+  )])])], 64
   /* STABLE_FRAGMENT */
   );
 }
